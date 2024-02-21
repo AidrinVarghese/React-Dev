@@ -1,11 +1,14 @@
+:root{
+  display: flex;
+  flex-direction: row;
+}
 .shared-container {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: lightblue;
     margin: 10px;
   }
   
   .shared-text {
-    color: lightblue;
+    color: darkblue;
     font-weight: bold;
   }
   

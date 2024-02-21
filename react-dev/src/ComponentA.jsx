@@ -1,10 +1,10 @@
 import React from 'react'
-import './ComponentA.css'
+import styles from './ComponentA.module.css'
 
 const ComponentA = () => {
   return (
-    <div className={'shared-container'} >
-      <p className={'shared-text'}>Component A</p>
+    <div className={styles['shared-container']} >
+      <p className={styles['shared-text']}>Component A</p>
     </div>
   )
 }

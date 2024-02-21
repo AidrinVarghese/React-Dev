@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+:root{
+  display: flexbox;
+}
 
 .App-logo {
   height: 40vmin;
