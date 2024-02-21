@@ -1,0 +1,13 @@
+.card{
+margin: 10px;
+padding: 5px;
+width: 100px;
+border-radius: 5px;
+background-color: rgb(88, 88, 88);
+width: 300px;
+height: 300px;
+}
+.card--body{
+    display: flex;
+    flex: 1;
+}

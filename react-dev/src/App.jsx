@@ -1,13 +1,24 @@
-import React from 'react'
-import Heading from './heading'
-import Body from './Body'
-
-const App = () => {
+import React, { Fragment } from 'react'
+// import Heading from './heading'
+// import Body from './Body'
+// import Card from './Card'
+// import {userData} from './Data'
+import ComponentA from './ComponentA'
+import ComponentB from './ComponentB'
+const App = () => { 
+  // let name = "Aidrin"; 
   return (
-    <div>
-        <Heading />
+    <Fragment>
+      {/* <Heading />
         <Body />
-    </div> 
+        {/* <form method='POST'>
+          <input type="text"  name = 'someone'/>
+          <input type="submit" />
+        </form> */}
+        {/* {userData.map((user)=><Card user = {user}/>)}         */}
+        <ComponentA/>
+        <ComponentB/>
+    </Fragment>
   )
 }
 

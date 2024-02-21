@@ -1,0 +1,11 @@
+.shared-container {
+    background-color: darkblue;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .shared-text {
+    color: lightblue;
+    font-weight: bold;
+  }
+  
