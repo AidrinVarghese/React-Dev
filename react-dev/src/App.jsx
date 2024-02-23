@@ -1,10 +1,10 @@
-import React, { Fragment, useState } from 'react';
-import Heading from './heading';
+import React, { Fragment, useEffect, useState } from 'react';
 import Body from './Body';
 import Card from './Card';
 import { userData } from './Data';
-import ComponentA from './ComponentA.jsx';
-import ComponentB from './ComponentB.jsx';
+import { SuperCard } from './SuperCard.jsx';
+import styles from './SuperCard.module.css'
+import { useNavigate } from 'react-router-dom';
 
 const App = () => {
   const [users, setUsers] = useState(userData);
@@ -18,14 +18,35 @@ const App = () => {
       setUsers(filtered);
     }
   };
+  
+  const [bgColor, superBgColor] = useState(styles.super);
+  const SuperCardChange = (e) => {
+    superBgColor(styles.superCard_changed)
+  }
+  const navigate = useNavigate();
+  const route=() =>{
+    navigate('/abc');
+  }
+// callback function, empty array
+// second return clean up function
+// mainly used for Api calls
+  useEffect(() => {
+    console.log()
+    return () => { 
+      console.log()
+    }
+  },[users])
 
   return (
     <Fragment>
       <div>
         <Body />
+        <button type='button' onClick={route}>Slap the butt</button>
         <input type="text" name="test" onChange={(e) => filterFunction(e)} />
         {users.map((user) => (
-          <Card key={user.id} user={user} />
+          <SuperCard key={user.id} bgColor={bgColor} >
+            <Card key={user.id} user={user} SuperCardChange = {SuperCardChange} />
+          </SuperCard>          
         ))}
       </div>
     </Fragment>
