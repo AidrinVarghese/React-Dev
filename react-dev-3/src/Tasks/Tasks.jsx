@@ -3,7 +3,7 @@ import { Card, Form } from 'react-bootstrap';
 import styles from './Task.module.css'; 
 
 const Task = ({ task, onChangeStatus}) => {
-  const [isChecked, setIsChecked] = useState(task.status == "complete"? true : false)
+  const [isChecked, setIsChecked] = useState(task.status === "complete"? true : false)
   return (
     <Card className={styles.task}> 
       <Form.Check
