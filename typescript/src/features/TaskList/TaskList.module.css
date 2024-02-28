@@ -1,0 +1,10 @@
+.tasklistlight{
+    background-color: #63ff70;
+    padding: 20px;
+}
+
+.tasklistdark{
+    background-color: grey;
+    padding: 20px;
+    color: white;
+}

@@ -1,0 +1,33 @@
+.light{
+    height: var(--main-height);
+    background-color: aquamarine;
+}
+
+.dark{
+    height: var(--main-height);
+    background-color: black;
+    color: white;
+}
+
+.nav{
+    height: var(--main-height);
+    position:fixed;
+    top: 0px;
+    left:0px;
+    width: 100vw;
+    z-index: 100;
+}
+
+.btn
+{
+    margin-top: 15px;
+    margin-left: 1000px;
+    height: 40px;
+    font-size: 13px;
+}
+.btn-2{
+    margin-top: 15px;
+    margin-left: 1000px;
+    height: 40px;
+    font-size: 13px;
+}

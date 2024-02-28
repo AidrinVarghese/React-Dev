@@ -1,0 +1,14 @@
+.tasklight
+{
+    background-color: #ECFFDC;
+    margin: 5px;
+    padding: 8px;
+}
+
+.taskdark
+{
+    background-color: black;
+    margin: 5px;
+    padding: 8px;
+    color: white;
+}
